@@ -1,12 +1,12 @@
-package nao.cycledev.addressbook;
+package com.javafxdemo.addressbook;
 
+import com.javafxdemo.addressbook.utils.SpringFxmlLoader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import nao.cycledev.addressbook.utils.SpringFxmlLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

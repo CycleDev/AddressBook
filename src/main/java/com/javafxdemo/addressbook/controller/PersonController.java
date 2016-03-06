@@ -1,11 +1,11 @@
-package nao.cycledev.addressbook.controller;
+package com.javafxdemo.addressbook.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import nao.cycledev.addressbook.service.PersonService;
-import nao.cycledev.addressbook.view.PersonView;
+import com.javafxdemo.addressbook.service.PersonService;
+import com.javafxdemo.addressbook.view.PersonView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 

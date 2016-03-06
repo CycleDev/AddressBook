@@ -1,9 +1,9 @@
-package nao.cycledev.addressbook.service;
+package com.javafxdemo.addressbook.service;
 
+import com.javafxdemo.addressbook.repository.PersonRepository;
 import javafx.collections.ObservableList;
-import nao.cycledev.addressbook.repository.PersonRepository;
-import nao.cycledev.addressbook.view.PersonView;
-import nao.cycledev.addressbook.view.PersonViewFactory;
+import com.javafxdemo.addressbook.view.PersonView;
+import com.javafxdemo.addressbook.view.PersonViewFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

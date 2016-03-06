@@ -1,4 +1,4 @@
-package nao.cycledev.addressbook.view;
+package com.javafxdemo.addressbook.view;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

@@ -1,4 +1,4 @@
-package nao.cycledev.addressbook.model;
+package com.javafxdemo.addressbook.model;
 
 public class Person {
 

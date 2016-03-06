@@ -1,7 +1,7 @@
-package nao.cycledev.addressbook.utils;
+package com.javafxdemo.addressbook.utils;
 
 import javafx.fxml.FXMLLoader;
-import nao.cycledev.addressbook.config.AppConfig;
+import com.javafxdemo.addressbook.config.AppConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.context.ApplicationContext;

@@ -1,8 +1,8 @@
-package nao.cycledev.addressbook.view;
+package com.javafxdemo.addressbook.view;
 
+import com.javafxdemo.addressbook.model.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import nao.cycledev.addressbook.model.Person;
 
 import java.util.List;
 

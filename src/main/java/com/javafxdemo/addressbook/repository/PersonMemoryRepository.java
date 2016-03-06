@@ -1,6 +1,6 @@
-package nao.cycledev.addressbook.repository;
+package com.javafxdemo.addressbook.repository;
 
-import nao.cycledev.addressbook.model.Person;
+import com.javafxdemo.addressbook.model.Person;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
