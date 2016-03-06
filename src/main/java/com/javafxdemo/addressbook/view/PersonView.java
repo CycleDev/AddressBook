@@ -9,6 +9,12 @@ public class PersonView {
     private StringProperty lastName;
     private StringProperty userName;
 
+    public PersonView() {
+        this.firstName = new SimpleStringProperty("");
+        this.lastName = new SimpleStringProperty("");
+        this.userName = new SimpleStringProperty("");
+    }
+
     public PersonView(String firstName, String lastName, String userName) {
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);

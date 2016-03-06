@@ -10,7 +10,7 @@ public class PersonViewFactory {
 
     public static PersonView from(Person person) {
         return new PersonView(person.getFirstName(),
-                              person.getFirstName(),
+                              person.getLastName(),
                               person.getUserName());
     }
 

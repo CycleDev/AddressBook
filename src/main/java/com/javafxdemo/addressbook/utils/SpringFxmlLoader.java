@@ -13,9 +13,10 @@ public class SpringFxmlLoader {
 
     private static final Logger LOG = LogManager.getLogger(SpringFxmlLoader.class);
     private static final ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+    private FXMLLoader loader;
 
     public Object load(String url) {
-        FXMLLoader loader = new FXMLLoader();
+        loader = new FXMLLoader();
         loader.setControllerFactory(clazz -> applicationContext.getBean(clazz));
         loader.setLocation(getClass().getResource(url));
         //loader.setResources(ResourceBundle.getBundle(resources));
@@ -25,5 +26,9 @@ public class SpringFxmlLoader {
             LOG.error(e.getMessage(), e);
         }
         return null;
+    }
+
+    public FXMLLoader getLoader() {
+        return loader;
     }
 }

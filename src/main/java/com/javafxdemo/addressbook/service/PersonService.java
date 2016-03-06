@@ -1,6 +1,7 @@
 package com.javafxdemo.addressbook.service;
 
 import com.javafxdemo.addressbook.repository.PersonRepository;
+import com.javafxdemo.addressbook.view.PersonFactory;
 import javafx.collections.ObservableList;
 import com.javafxdemo.addressbook.view.PersonView;
 import com.javafxdemo.addressbook.view.PersonViewFactory;
@@ -19,6 +20,10 @@ public class PersonService {
 
     public ObservableList<PersonView> getAll() {
         return PersonViewFactory.from(personRepository.getAll());
+    }
+
+    public void save(PersonView person) {
+        personRepository.save(PersonFactory.from(person));
     }
 
 }

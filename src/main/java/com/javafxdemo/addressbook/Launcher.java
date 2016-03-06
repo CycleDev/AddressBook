@@ -1,5 +1,6 @@
 package com.javafxdemo.addressbook;
 
+import com.javafxdemo.addressbook.controller.PersonController;
 import com.javafxdemo.addressbook.utils.SpringFxmlLoader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -45,11 +46,10 @@ public class Launcher extends Application {
 
     public void showPersonOverview() {
         log.debug("Loading view from: {}", "/fxml/person.fxml");
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxml/person.fxml"));
-
         SpringFxmlLoader springFxmlLoader = new SpringFxmlLoader();
         AnchorPane personOverview = (AnchorPane)springFxmlLoader.load("/fxml/person.fxml");
+        PersonController personController = springFxmlLoader.getLoader().getController();
+        personController.setPrimaryStage(primaryStage);
         rootLayout.setCenter(personOverview);
     }
 }
